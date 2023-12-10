@@ -121,24 +121,42 @@
     <!-- Live Style Switcher Ends - demo only -->
     <!-- Page Wrapper Starts -->
     <div class="wrapper">
-        <!-- Header Starts -->
         <header id="header" class="header">
             <div class="header-inner">
-                <!-- Navbar Starts -->
-                <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav">
-					<!-- Logo Starts -->
+                <!-- Начало навигационной панели -->
+                <nav class="navbar navbar-expand-lg p-0 navbar-dark" id="singlepage-nav">
+                    <!-- Начало логотипа -->
                     <div class="logo">
                         <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" href="#mainslider">
-                            <!-- Logo White Starts -->
                             <img id="logo-light" class="logo-light" src="{% static 'assets/img/styleswitcher/logos/orange.png' %}" alt="logo-light" />
-                            <!-- Logo White Ends -->
-                            <!-- Logo Black Starts -->
                             <img id="logo-dark" class="logo-dark" src="{% static 'assets/img/styleswitcher/logos/logos-dark/orange.png' %}" alt="logo-dark" />
-                            <!-- Logo Black Ends -->
                         </a>
                     </div>
-					<!-- Logo Ends -->
-					<!-- Hamburger Icon Starts -->
+                    <!-- Завершение логотипа -->
+        
+                    <!-- Начало кнопок навигации -->
+                    <div class="mx-auto"> <!-- Изменено ml-auto на mx-auto -->
+                        <ul class="nav navbar-nav navbar-light justify-content-center"> <!-- Изменено justify-content-end на justify-content-center -->
+                            <li class="nav-item"><a href="#home" class="nav-link scroll-to-target btn-lg">Home</a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link scroll-to-target btn-lg">About</a></li>
+                            <li class="nav-item"><a href="#services" class="nav-link scroll-to-target btn-lg">Services</a></li>
+                            <li class="nav-item"><a href="#portfolio" class="nav-link scroll-to-target btn-lg">Portfolio</a></li>
+                            <li class="nav-item"><a href="#team" class="nav-link scroll-to-target btn-lg">Team</a></li>
+                            <li class="nav-item"><a href="#blog" class="nav-link scroll-to-target btn-lg">Blog</a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link scroll-to-target btn-lg">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- Завершение кнопок навигации -->
+                </nav>
+                <!-- Завершение навигационной панели -->
+            </div>
+        </header>
+        
+        
+        
+
+
+
                     <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span id="icon-toggler">
 						  <span></span>
@@ -265,10 +283,23 @@
                         <p>We are a leading company sit amet, consectetur adipisicing elit. Minus obcaecati pariatur officiis molestias eveniet harum laudantium obcaecati pariatur officiis molestias eveniet harum laudantium sed optio iste. </p>
 						<!-- Tabs Heading Starts -->
                         <ul class="nav nav-tabs">
-                            <li><a class="active" data-toggle="tab" href="#menu1">Our Mission</a></li>
-                            <li><a data-toggle="tab" href="#menu2">Our advantages</a></li>
-                            <li><a data-toggle="tab" href="#menu3">Our guarantees</a></li>
+                            <li style="margin-right: 150px;">
+                                <a class data-toggle="tab" href="#menu1">Our Mission</a>
+                            </li>
+                            <li style="margin-right: 150px;">
+                                <a data-toggle="tab" href="#menu2">Our Advantages</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#menu3">Our Guarantees</a>
+                            </li>
                         </ul>
+
+                        
+                        
+                            
+                            
+                            
+                        
                         <!-- Tabs Heading Ends -->
                         <!-- Tabs Content Starts -->
                         <div class="tab-content">
