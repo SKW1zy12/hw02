@@ -156,6 +156,7 @@ function readCookie(name) {
 /**
 	@ON LOAD
 **/
+jQuery("body").addClass('dark')
 window.onload = function(e) {
 
 	// COLOR SCHEME

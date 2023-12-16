@@ -161,7 +161,7 @@
 				<div class="text-center top-text">
                     <!-- Main Heading Starts -->
 					<div class="text-center top-text">
-						<h1>HOW TO BE A GOOD FREELANCER?</h1>
+						<h1>{{blog.title}}</h1>
 					</div> 
 					<!-- Main Heading Ends -->
 					<hr>
@@ -188,14 +188,12 @@
 							<!-- Figure Starts -->
 							<figure>
 								<a href="blog-post.html">
-									<img class="img-responsive" src="{% static 'assets/img/blog/blog-post-1.jpg' %}" alt="">
+									<img class="img-responsive" src="{{blog.image.url}}" alt="">
 								</a>
 							</figure>
 							<!-- Figure Ends -->
 							<!-- Content Starts -->
-							<p class="content-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p class="content-article">{{blog.descriptions}}</p>
 							<!-- Content Ends -->
 							<!-- Meta Starts -->
 							<div class="meta">
