@@ -32,6 +32,28 @@ class Settings(models.Model):
         upload_to="photo",
         verbose_name='Логотип_2'
     )
+    week = models.CharField(
+        max_length = 255,
+        verbose_name = "Дни когда ты в гиксе"
+    )
+    week_of = models.CharField(
+        max_length = 255,
+        verbose_name = "дни когда ты не в гиксе"
+    )
+    time = models.CharField(
+        max_length = 255,
+        verbose_name = "С сколько до скольки ты в гиксе"
+    )
+    number = models.CharField(
+        max_length = 255,
+        verbose_name = "Номер телефона",
+        blank=True, null=True
+    )
+    email = models.CharField(
+        max_length = 255,
+        verbose_name = "Email адресс",
+        blank=True, null=True
+    )
     
     class Meta:
         verbose_name = 'Настройки ',
@@ -80,33 +102,20 @@ class Mentor(models.Model):
     mentor_image = models.ImageField(
         upload_to="Mentor image"
     )
-    # mentor_fon = models.ImageField(
-    #     upload_to="Fon image"
-    # twitter = models.URLField(
-    #     verbose_name="twitter"
-    # )
-    # facebook = models.URLField(
-    #     verbose_name="facebook"
-    # )
-    # skype = models.URLField(
-    #     verbose_name="skype"
-    # )
-    # instagram = models.URLField(
-    #     verbose_name="instagram"
-    # )
-    # linkedin = models.URLField(
-    #     verbose_name="linkedin"
-    # )
-    # youtube = models.URLField(
-    #     verbose_name="youtube"
-    # )
+    insgram = models.URLField(
+        max_length=255, 
+        blank=True, null=True
+    )
+    fonbb = models.ImageField(
+        upload_to="Mentor Фон"
+    )
 
     def __str__(self):
         return self.mentor_name
     
     class Meta:
-        verbose_name = 'Инфорамация обо мне1'
-        verbose_name_plural = "Настройка информации1"
+        verbose_name = 'Инфорамация о менторе'
+        verbose_name_plural = "Настройка ментора"
 
 class Card(models.Model):
     name_card = models.CharField(
@@ -159,6 +168,11 @@ class Teacher(models.Model):
     teach_month = models.CharField(
         max_length = 255,
         verbose_name = "Месяц который он обучал"
+    )
+    insgram = models.URLField(
+        max_length=255, 
+        blank=True, 
+        null=True
     )
     def __str__(self):
         return self.teach_name
@@ -232,4 +246,3 @@ class Mytpoject(models.Model):
         class Meta:
             verbose_name = 'Мои проекты'
             verbose_name_plural = "Мои проекты"
-

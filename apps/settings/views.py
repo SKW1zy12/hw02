@@ -1,5 +1,7 @@
-from django.shortcuts import render
+
 from apps.settings.models import Slide, Settings, About_me, Mentor,Card,Friend,Teacher,Blogpost, Mypro,Mytpoject
+from django.shortcuts import render
+
 # Create your views here.
 def index(request):
     slide = Slide.objects.all()
@@ -18,5 +20,5 @@ def blog(request):
     return render(request, 'blog.html', locals())
 
 def blog_detail(request, id):
-    blog = Blogpost.objects.get()
-    return render(request,'blog-post.html', locals() )
+    blog = Blogpost.objects.get(id=id)
+    return render(request,'blog-post.html', locals())

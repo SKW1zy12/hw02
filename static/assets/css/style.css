@@ -1439,6 +1439,8 @@ a:hover {
     float: left;
     text-align: left;
     display: inline-block;
+    margin-top: 5px; /* Уменьшите значение, чтобы поднять логотип выше */
+    margin-bottom: 10px; /* Добавьте значение, если нужно пространство снизу */
 }
 .logo a {
     width: 150px;
@@ -1473,6 +1475,8 @@ a:hover {
     float: left;
     text-align: left;
     display: inline-block;
+    margin-top: 5px; /* Уменьшите значение, чтобы поднять логотип выше */
+    margin-bottom: 10px; /* Добавьте значение, если нужно пространство снизу */
 }
 .logo a {
     max-width: 100%;
@@ -1489,7 +1493,7 @@ a:hover {
     top: 0;
     left: 0;
     transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
-    -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -o-transition: all 0.27s cubic-bezi er(0, 0, 0.58, 1) 0s;
     -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
 }

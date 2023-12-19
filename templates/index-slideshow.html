@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="utf-8" />
-    <title>KUKU - One Page Parallax</title>
+    <title>KUKU - KUDBUKHON</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Fonts -->
@@ -154,9 +155,9 @@
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#mainslider"><i class="fa fa-home"></i> Главная</a></li>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#about"><i class="fa fa-user"></i> Обо мне</a></li>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#services"><i class="fa fa-cog"></i>Факты Обо мне</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio"><i class="fa fa-image"></i> Партфолио</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#team"><i class="fa fa-user"></i> Команда</a></li>
-                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#blog"><i class="fa fa-comments"></i> Блог</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#portfolio"><i class="fa fa-image"></i>Мои проекты</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#team"><i class="fa fa-user"></i>Мои учителя</a></li>
+                            <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#blog"><i class="fa fa-comments"></i>ново</a></li>
                             <li><a data-toggle="collapse" data-target=".navbar-collapse.show" class="link-menu" href="#contact"><i class="fa fa-envelope"></i> Контакты</a></li>
                         </ul>
                     </div>
@@ -280,23 +281,9 @@
                             <div class="social-icons">
                                 <ul class="social">
                                     <li>
-                                        <a class="twitter" href="#" title="twitter"></a>
+                                        <a class="instagram" href="{{mentor.insgram}}" title="instagram"></a>
                                     </li>
-                                    <li>
-                                        <a class="facebook" href="#" title="facebook"></a>
-                                    </li>
-                                    <li>
-                                        <a class="skype" href="#" title="skype"></a>
-                                    </li>
-                                    <li>
-                                        <a class="instagram" href="#" title="instagram"></a>
-                                    </li>
-                                    <li>
-                                        <a class="linkedin" href="#" title="linkedin"></a>
-                                    </li>
-                                    <li>
-                                        <a class="youtube" href="#" title="youtube"></a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                             <!-- Social Media Ends -->
@@ -414,7 +401,6 @@
                     <ul class="simplefilter nav nav-pills d-block">
                         <!-- Filter Wrapper Items Starts -->
                         <li class="active" data-filter="all"><i class="fa fa-reorder"></i>Мои проекты</li>
-                        <li data-filter="1">Фотки</li>
                         <!-- Filter Wrapper Items Ends -->
                     </ul>
                 </nav>
@@ -537,13 +523,7 @@
                                             <p>{{zaebalo.teach_month}}</p>
                                             <ul class="list list-inline social">
                                                 <li>
-                                                    <a href="#" class="fa fa-facebook"></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="fa fa-twitter"></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="fa fa-google-plus"></a>
+                                                    <a class="instagram" href="{{zaebalo.insgram}}" title="instagram"></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -557,49 +537,14 @@
         </section>
         <!-- Team Section Ends -->
         <!-- Newsletter Section Starts -->
-        <section class="newsletter">
-            <div class="section-overlay">
-                <!-- Container Starts -->
-                <div class="container">
-                    <!-- Main Heading Starts -->
-                    <div class="text-center top-text">
-                        <h1><span>ВОПРОСЫ?</span>ПИШИ</h1>
-                        <h4>Я буду рада ответить каждому</h4>
-                    </div>
-                    <!-- Main Heading Ends -->
-                    <div class="newsletter-content">
-                        <p class="text-center"><span> </span><span>  </span></p>
-                        <!-- Newsletter Form Starts -->
-                        <form class="form-inputs">
-                            <!-- Newsletter Form Input Field Starts -->
-                            <div class="col-md-12 form-group custom-form-group p-0">
-                                <span class="input custom-input">
-									<input placeholder="Напиши свой email" class="input-field custom-input-field" type="text" />
-									<label class="input-label custom-input-label" >
-										<i class="fa fa-envelope-open-o icon icon-field"></i>
-									</label>
-								</span>
-                            </div>
-                            <!-- Newsletter Form Input Field Ends -->
-                            <!-- Newsletter Form Submit Button Starts -->
-                            <button id="submit" name="submit" type="submit" class="custom-button" title="Send">Написать </button>
-                            <!-- Newsletter Form Submit Button Ends -->
-                        </form>
-                        <!-- Newsletter Form Ends -->
-                    </div>
-                </div>
-                <!-- Container Ends -->
-            </div>
-        </section>
-        <!-- Newsletter Section Ends -->
         <!-- Blog Section Starts -->
         <section class="blog" id="blog">
             <!-- Container Starts -->
             <div class="container">
                 <!-- Main Heading Starts -->
                 <div class="text-center top-text">
-                    <h1><span>Blog</span> Posts</h1>
-                    <h4>Latest Articles</h4>
+                    <h1><span></span>Новости</h1>
+                    <h4>Последние новости Geeks</h4>
                 </div>
                 <!-- Main Heading Starts -->
                 <!-- Divider Starts -->
@@ -620,7 +565,7 @@
                             <!-- Article Content Starts -->
                             <div class="post-body">
                                 <h4 class="post-title">
-                                    <a href="blog-post.html">{{post.title}}</a>
+                                    <a href="{% url 'blog_detail' post.id %}">{{post.title}}</a>
                                 </h4>
                                 <div class="post-text">
                                     <p>{{post.descriptions|truncatechars:50 }}</p>
@@ -636,10 +581,6 @@
                         </div>
                     </div>
                     {% endfor %}
-					<div class="mx-auto">
-                        <a class="custom-button link-blog" href="blog.html">Посмотреть все</a>
-                    </div>
-                </div>
                 <!-- Latest Blog Posts Ends -->
             </div>
         </section>
@@ -702,8 +643,8 @@
                     <div class="col-md-6 col-sm-12">
                         <div class="info-map-boxes-item fa fa-clock-o">
                             <h1>Вемя работы</h1>
-                            <p>Пониденльник-Суббота : 11–17:00
-                                <br>Воскресенье - Отдых</p>
+                            <p>{{logoo.week}} : {{logoo.time}}
+                                <br>{{logoo.week_of}} - Отдых</p>
                         </div>
                     </div>
                     <!-- Left Info Map Box Ends -->
@@ -711,8 +652,8 @@
                     <div class="col-md-6 col-sm-12">
                         <div class="info-map-boxes-item fa fa-phone">
                             <h1>МОИ КОНТАКНТЫ</h1>
-                            <p>Номер телефон:+996554616367
-                                <br><a href="#">kudbuhon21@yourdomain.com</a></p>
+                            <p>{{logoo.number}}
+                                <br><a href="#">{{logoo.email}}</a></p>
                         </div>
                     </div>
                     <!-- Right Info Map Box Ends -->
@@ -722,66 +663,7 @@
         </section>
         <!-- Contact Section Ends -->
         <!-- Contact Form Section Starts -->
-        <section class="contactform">
-            <div class="section-overlay">
-                <div class="container">
-                    <!-- Main Heading Starts -->
-                    <div class="text-center top-text">
-                        <h1><span>Напиши</span> мне</h1>
-                        <h4>НАПОМИНАЛКА</h4>
-                    </div>
-                    <!-- Main Heading Ends -->
-                    <div class="form-container">
-                        <!-- Contact Form Starts -->
-                        <form class="formcontact" method="post" action="php/process-form.php">
-                            <div class="row form-inputs">
-                                <!-- First Name Field Starts -->
-                                <div class="col-md-6 form-group custom-form-group">
-                                    <span class="input custom-input">
-										<input placeholder="Имя" class="input-field custom-input-field" id="Имя" name="Имя" type="text" required data-error="NEW ERROR MESSAGE">
-										<label class="input-label custom-input-label" >
-											<i class="fa fa-user icon icon-field"></i>
-										</label>
-									</span>
-                                </div>
-                                <!-- First Name Field Ends -->
-                                <!-- Last Name Field Starts -->
-                                <div class="col-md-6 form-group custom-form-group">
-                                    <span class="input custom-input">
-										<input placeholder="Фамилия" class="input-field custom-input-field" id="Фамилия" name="Фамилия" type="text" required>
-										<label class="input-label custom-input-label" >
-											<i class="fa fa-user-o icon icon-field"></i>
-										</label>
-									</span>
-                                </div>
-                                <!-- Last Name Field Ends -->
-                                <!-- Message Field Starts -->
-                                <div class="form-group custom-form-group col-md-12">
-                                    <textarea placeholder="сообщение" id="сообщение" name="сообщение" cols="45" rows="7" required></textarea>
-                                </div>
-                                <!-- Message Field Ends -->
-                                <!-- Email Name Field Starts -->
-                                <div class="col-md-6 form-group custom-form-group">
-                                    <span class="input custom-input">
-										<input placeholder="почта" class="input-field custom-input-field" id="почта" name="почта" type="text" required>
-										<label class="input-label custom-input-label" >
-											<i class="fa fa-envelope icon icon-field"></i>
-										</label>
-									</span>
-                                </div>
-                                <!-- Email Name Field Ends -->
-                                <!-- Submit Button Starts -->
-                                <div class="col-md-6 submit-form">
-                                    <button id="form-submit" name="submit" type="submit" class="custom-button" title="Send">Написать</button>
-                                </div>
-                                <!-- Submit Button Ends -->
-                                <!-- Form Submit Message Starts -->
-                                <div class="col-sm-12 text-center output_message_holder d-none">
-                                    <p class="output_message"></p>
-                                </div>
                                 <!-- Form Submit Message Ends -->
-                            </div>
-                        </form>
                         <!-- Contact Form Ends -->
                     </div>
                 </div>
@@ -789,17 +671,6 @@
         </section>
         <!-- Contact Form Section Ends -->
         <!-- Logos Section Starts -->
-        <section class="logos">
-            <div class="container">
-                <ul class="bxslider" id="bxslider">
-                    <!-- Logos Items Starts -->
-                    <li><img id="3docean" src="{% static 'assets/img/logos-slider/3docean-light-background.png' %}" alt="3docean"></li>
-                    <li><img id="activeden" src="{% static 'assets/img/logos-slider/activeden-light-background.png' %}" alt="activeden"></li>
-                    <li><img id="audiojungle" src="{% static 'assets/img/logos-slider/audiojungle-light-background.png' %}" alt="audiojungle"></li>
-                    <li><img id="codecanyon" src="{% static 'assets/img/logos-slider/codecanyon-light-background.png' %}" alt="codecanyon"></li>
-                    <li><img id="graphicriver" src="{% static 'assets/img/logos-slider/graphicriver-light-background.png' %}" alt="graphicriver"></li>
-                    <li><img id="photodune" src="{% static 'assets/img/logos-slider/photodune-light-background.png' %}" alt="photodune"></li>
-                    <li><img id="themeforest" src="{% static 'assets/img/logos-slider/themeforest-light-background.png' %}" alt="themeforest"></li>
                     <!-- Logos Items Ends -->
                 </ul>
             </div>
@@ -810,37 +681,8 @@
             <!-- Container Starts -->
             <div class="container">
                 <!-- Copyright Text Starts -->
-                <p>Salimo - One Page Parallax</p>
-                <p>
-                    &copy; Copyright 2017 Salimo & Designed with <span class="heart">&#10084;</span> by <a target="_blank" href="http://themeforest.net/user/celtano/">Celtano</a>
-                </p>
                 <!-- Copyright Text Ends -->
                 <!-- Social Media Links Starts -->
-                <div class="social-icons">
-                    <ul class="social">
-                        <li>
-                            <a class="twitter" href="#" title="twitter"></a>
-                        </li>
-                        <li>
-                            <a class="facebook" href="#" title="facebook"></a>
-                        </li>
-                        <li>
-                            <a class="google" href="#" title="google"></a>
-                        </li>
-                        <li>
-                            <a class="skype" href="#" title="skype"></a>
-                        </li>
-                        <li>
-                            <a class="instagram" href="#" title="instagram"></a>
-                        </li>
-                        <li>
-                            <a class="linkedin" href="#" title="linkedin"></a>
-                        </li>
-                        <li>
-                            <a class="youtube" href="#" title="youtube"></a>
-                        </li>
-                    </ul>
-                </div>
                 <!-- Social Media Links Ends -->
             </div>
             <!-- Container Ends -->
@@ -998,17 +840,17 @@
 				var myOptions = {
 					scrollwheel: false,
 					zoom: 12,
-					center: new google.maps.LatLng(40.7127837, -74.00594130000002),
+					center: new google.maps.LatLng(40.51931601790102, 72.80301519677836),
 					mapTypeId: google.maps.MapTypeId.ROADMAP
 				};
 				var map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
 				var marker = new google.maps.Marker({
 					map: map,
 					icon: "{% static 'assets/img/markers/orange.png' %}",
-					position: new google.maps.LatLng(40.7127837, -74.00594130000002)
+					position: new google.maps.LatLng(40.51931601790102, 72.80301519677836)
 				});
 				var infowindow = new google.maps.InfoWindow({
-					content: "<strong>SALIMO</strong><br>1234 Disney Street, New York City<br>"
+					content: "<strong>GEEKS</strong><br>ул. Мырзалы Аматова 1Б бизнес-центр 'Томирис', цокольный этаж, 723510<br>"
 				});
 				google.maps.event.addListener(marker, "click", function() {
 					infowindow.open(map, marker);

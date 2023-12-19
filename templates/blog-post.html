@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Blog Post, Salimo - One Page Parallax</title>
+    <title>Новости 	Geeks-KUKU </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Fonts -->
@@ -42,7 +42,7 @@
     <!-- Preloader Starts -->
     <div class="preloader" id="preloader">
         <div class="logopreloader">
-            <img src="{% static 'assets/img/styleswitcher/logos/yellow.png' %}" alt="logo-black">
+            <img src="{{logoo.one_page.url}}" alt="logo-black">
         </div>
         <div class="loader" id="loader"></div>
     </div>
@@ -123,12 +123,12 @@
                 <nav class="navbar navbar-expand-lg p-0" id="singlepage-nav">
 					<!-- Logo Starts -->
                     <div class="logo">
-                        <a class="navbar-brand link-menu nav-external" href="index-slideshow.html">
+                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand link-menu scroll-to-target" href="#mainslider">
                             <!-- Logo White Starts -->
-                            <img id="logo-light" class="logo-light" src="{% static 'assets/img/styleswitcher/logos/yellow.png' %}" alt="logo-light" />
+                            <img id="logo-light" class="logo-light" src="{{logoo.logo.url}}" alt="logo-light" />
                             <!-- Logo White Ends -->
                             <!-- Logo Black Starts -->
-                            <img id="logo-dark" class="logo-dark" src="{% static 'assets/img/styleswitcher/logos/logos-dark/yellow.png' %}" alt="logo-dark" />
+                            <img id="logo-dark" class="logo-dark" src="{{logoo.logo.url}}" alt="logo-dark" />
                             <!-- Logo Black Ends -->
                         </a>
                     </div>
@@ -146,8 +146,7 @@
 					<!-- Navigation Menu Starts -->
                     <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
                         <ul class="nav-menu-inner ml-auto">
-                            <li><a class="link-menu nav-external" href="blog.html"><i class="fa fa-arrow-left"></i> Back To Blog</a></li>
-							<li><a class="link-menu nav-external" href="index-slideshow.html"><i class="fa fa-home"></i> Back To One Page</a></li>
+							<li><a class="link-menu nav-external" href="http://127.0.0.1:8000/"><i class="fa fa-home"></i>Назад</a></li>
                         </ul>
                     </div>
 					<!-- Navigation Menu Ends -->
@@ -166,13 +165,6 @@
 					<!-- Main Heading Ends -->
 					<hr>
                     <!-- Meta Starts -->
-					<div class="meta">
-						<span><i class="fa fa-user"></i> <a href="#">admin</a></span>
-						<span><i class="fa fa-calendar"></i> 11 October 2017</span>
-						<span><i class="fa fa-commenting"></i> <a href="blog-post.html">29 comments</a></span>
-						<span><i class="fa fa-tags"></i> themeforest, envato</span>
-						<span><i class="fa fa-link"></i> <a href="blog-post.html">permalink</a></span>
-					</div>
 					<!-- Meta Ends -->
                 </div>
 			</div>
@@ -196,204 +188,13 @@
 							<p class="content-article">{{blog.descriptions}}</p>
 							<!-- Content Ends -->
 							<!-- Meta Starts -->
-							<div class="meta">
-								<span><i class="fa fa-user"></i> <a href="#">admin</a></span>
-								<span><i class="fa fa-calendar"></i> 9 November 2017</span>
-								<span><i class="fa fa-commenting"></i> <a href="blog-post.html">18 comments</a></span>
-								<span><i class="fa fa-tags"></i> freelance, market</span>
-								<span><i class="fa fa-link"></i> <a href="blog-post.html">permalink</a></span>
-							</div>
 							<!-- Meta Ends -->
 							<!-- Comments Starts -->
-						<div class="comments">
-							<h3 class="comments-heading uppercase">3 Comments</h3>
-							<ul class="comments-list">
-								<li>
-									<!-- Comment Starts -->
-									<div class="comment">
-										<img class="comment-avatar pull-left" alt="" src="{% static 'assets/img/blog/user1.jpg' %}">
-										<div class="comment-body">
-											<div class="meta-data">
-												<span class="comment-author">Lina Marzouki</span>
-												<span class="comment-date pull-right second-font">January 17, 2017</span>
-											</div>
-											<p class="comment-content">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p>
-											<div>
-												<a class="comment-reply" href="#">Reply</a>
-											</div>	
-										</div>
-									</div>
-									<!-- Comment Ends -->
-									<ul class="comments-reply">
-										<li>
-											<!-- Comment Starts -->
-											<div class="comment">
-												<img class="comment-avatar pull-left" alt="" src="{% static 'assets/img/blog/user2.jpg' %}">
-												<div class="comment-body">
-													<div class="meta-data">
-														<span class="comment-author">Rawia Chniti</span>
-														<span class="comment-date pull-right">March 29, 2017</span>
-													</div>
-													<p class="comment-content">
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p>
-													<div>
-														<a class="comment-reply" href="#">Reply</a>
-													</div>	
-												</div>
-											</div>
-											<!-- Comment Ends -->
-										</li>
-									</ul>
-									<!-- Comment Starts -->
-									<div class="comment">
-										<img class="comment-avatar pull-left" alt="" src="{% static 'assets/img/blog/user3.jpg' %}">
-										<div class="comment-body">
-											<div class="meta-data">
-												<span class="comment-author">Slim Hamdi</span>
-												<span class="comment-date pull-right">January 17, 2017</span>
-											</div>
-											<p class="comment-content">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p>
-											<div>
-												<a class="comment-reply" href="#">Reply</a>
-											</div>	
-										</div>
-									</div>
-									<!-- Comment Ends -->
-								</li>
-							</ul>
-							<h3 class="comments-heading add-comment">Add a comment</h3>
-							<!-- Comments Form Starts -->
-							<div class="custom-form comments-form">
-								<form>
-									<!-- Input Field Starts -->
-									<div class="form-group">
-										<input class="form-control" name="name" id="name" placeholder="NAME" type="text" required>
-									</div>
-									<!-- Input Field Ends -->
-									<!-- Input Field Starts -->
-									<div class="form-group">
-										<input class="form-control" name="email" id="email" placeholder="EMAIL" type="email" required>
-									</div>
-									<!-- Input Field Ends -->
-									<!-- Input Field Starts -->
-									<div class="form-group">
-										<textarea class="form-control" id="comment" name="comment" placeholder="COMMENT"  required></textarea>
-									</div>
-									<!-- Input Field Ends -->
-									<!-- Submit Form Button Starts -->
-									<div class="form-group">
-										<button class="custom-button" type="submit">submit comment</button>
-									</div>
-									<!-- Submit Form Button Ends -->
-								</form>
-							</div>
-							<!-- Comments Form Ends -->
-						</div>
-						</article>
-						<!-- Article Ends -->
-					</div>
-					<!-- Sidebar Starts -->
-					<div class="sidebar col-xs-12 col-md-4">
-						<!-- Categories Widget Starts -->
-						<div class="widget">
-							<h3 class="widget-title">التصنيفات</h3>
-							<ul class="unstyled nav nav-tabs">
-								<li><a href="#">جافاسكريبت</a></li>
-								<li><a href="#">ووردبرس</a></li>
-								<li><a href="#">فوتوشوب</a></li>
-								<li><a href="#">جملة</a></li>
-								<li><a href="#">برستاشوب</a></li>
-								<li><a href="#">الستراتور</a></li>
-							</ul>
-						</div>
-						<!-- Categories Widget Ends -->
-						<!-- Archives Widget Starts -->
-						<div class="widget">
-							<h3 class="widget-title">الأرشيف</h3>
-							<ul class="unstyled arrow nav nav-tabs">
-								<li><a href="#">جانفي 2018</a></li>
-								<li><a href="#">ديسمبر 2017</a></li>
-								<li><a href="#">نوفمبر 2017</a></li>
-								<li><a href="#">أكتوبر 2017</a></li>
-								<li><a href="#">سبتمبر 2017</a></li>
-							</ul>
-						</div>
+						
 						<!-- Archives Widget Ends -->
-						<!-- Latest Posts Widget Ends -->
-						<div class="widget recent-posts">
-							<h3 class="widget-title">آخر المقالات</h3>
-							<ul class="unstyled clearfix">
-							<!-- Recent Post Widget Starts -->
-							<li>
-								<div class="posts-thumb pull-left"> 
-									<a href="blog-post.html">
-										<img alt="img" src="{% static 'assets/img/blog/blog-post-thumb-1.jpg' %}">
-									</a>
-								</div>
-								<div class="post-info">
-									<h4 class="entry-title">
-										<a href="blog-post.html">لماذا ثيم فورست أفضل موقع</a>
-									</h4>
-									<p class="post-meta">
-										<span class="post-date"><i class="fa fa-clock-o"></i> 9/10/2017</span>
-									</p>
-								</div>
-								<div class="clearfix"></div>
-							</li>
 							<!-- Recent Post Widget Ends -->
 							<!-- Recent Post Widget Starts -->
-							<li>
-								<div class="posts-thumb pull-left"> 
-									<a href="blog-post-light.html">
-										<img alt="img" src="{% static 'assets/img/blog/blog-post-thumb-2.jpg' %}">
-									</a>
-								</div>
-								<div class="post-info">
-									<h4 class="entry-title">
-										<a href="blog-post-light.html">أحدث قوالب ووردبريس</a>
-									</h4>
-									<p class="post-meta">
-										<span class="post-date"><i class="fa fa-clock-o"></i>  9/10/2017</span>
-									</p>
-								</div>
-								<div class="clearfix"></div>
-							</li>
-							<!-- Recent Post Widget Ends -->
-							<!-- Recent Post Widget Starts -->
-							<li>
-								<div class="posts-thumb pull-left"> 
-									<a href="blog-post-light.html">
-										<img alt="img" src="{% static 'assets/img/blog/blog-post-thumb-3.jpg' %}">
-									</a>
-								</div>
-								<div class="post-info">
-									<h4 class="entry-title">
-										<a href="blog-post-light.html">لماذا ثيم فورست أفضل موقع</a>
-									</h4>
-									<p class="post-meta">
-										<span class="post-date"><i class="fa fa-clock-o"></i>  9/10/2017</span>
-									</p>
-								</div>
-								<div class="clearfix"></div>
-							</li>
-							<!-- Recent Post Widget Ends -->
-							</ul>
-						</div>
-						<!-- Latest Posts Widget Ends -->
-						<!-- Tags Widget Starts -->
-						<div class="widget widget-tags">
-							<h3 class="widget-title">الأوسمة </h3>
-							<ul class="unstyled clearfix">
-								<li><a href="#">جافاسكريبت</a></li>
-								<li><a href="#">ووردبرس</a></li>
-								<li><a href="#">فوتوشوب</a></li>
-								<li><a href="#">جملة</a></li>
-								<li><a href="#">برستاشوب</a></li>
-								<li><a href="#">الستراتور</a></li>
-							</ul>
-						</div>
+							
 						<!-- Tags Widget Ends -->
 					</div>
 					<!-- Sidebar Ends -->
@@ -406,34 +207,15 @@
             <!-- Container Starts -->
             <div class="container">
                 <!-- Copyright Text Starts -->
-                <p>Salimo - One Page Template</p>
+                <p>Новости GEEKS-KUKU </p>
                 <p>
-                    &copy; Copyright 2016 Salimo & Designed with <span class="heart">&#10084;</span> by <a target="_blank" href="http://themeforest.net/user/celtano/">Celtano</a>
                 </p>
                 <!-- Copyright Text Ends -->
                 <!-- Social Media Links Starts -->
                 <div class="social-icons">
                     <ul class="social">
                         <li>
-                            <a class="twitter" href="#" title="twitter"></a>
-                        </li>
-                        <li>
-                            <a class="facebook" href="#" title="facebook"></a>
-                        </li>
-                        <li>
-                            <a class="google" href="#" title="google"></a>
-                        </li>
-                        <li>
-                            <a class="skype" href="#" title="skype"></a>
-                        </li>
-                        <li>
                             <a class="instagram" href="#" title="instagram"></a>
-                        </li>
-                        <li>
-                            <a class="linkedin" href="#" title="linkedin"></a>
-                        </li>
-                        <li>
-                            <a class="youtube" href="#" title="youtube"></a>
                         </li>
                     </ul>
                 </div>
